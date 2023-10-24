@@ -13,7 +13,7 @@ const App: React.FC = () => {
     e.preventDefault();
 
     if (todo) {
-      setTodos([...todos, { id: Date.now(), todo:todo, isDone:false}])
+      setTodos([...todos, { id: Date.now(), todo, isDone: false}]);
       setTodo("");
     }
   };
@@ -27,6 +27,6 @@ const App: React.FC = () => {
       <TodoList todos={todos} setTodos={setTodos}/>
     </div>
   );
-}
+};
 
 export default App;
